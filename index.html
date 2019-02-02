@@ -10,7 +10,7 @@
         <a class="main-header-logo">
           <img src="img/logo.svg" width="220" height="47" alt="Техномарт">
         </a>
-        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
           <label for="search">Поиск:</label>
           <input class="icon-search" id="search" type="search">
         </form>
@@ -303,18 +303,15 @@
           <h2 class="visually-hidden">Заблудились? Напишите нам!</h2>
           <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
-              <h3>Ваше имя:</h3>
-              <label class="visually-hidden" for="user-name">Имя</label>
+              <label for="user-name">Ваше имя:</label>
               <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
             </p>
             <p>
-              <h3>Ваш e-mail:</h3>
-              <label class="visually-hidden" for="user-email">Почта</label>
+              <label for="user-email">Ваш e-mail</label>
               <input class="email-icon-user" id="user-email" type="email" name="email" placeholder="email@example.com" required>
             </p>
             <p>
-              <h3>Текст письма:</h3>
-              <label class="visually-hidden" for="text-letter">Текст письма</label>
+              <label for="text-letter">Текст письма</label>
               <textarea class="text-icon-user" id="text-letter" name="text" rows="10" cols="30" placeholder="В свободной форме" required>
               </textarea>
             </p>
