@@ -305,17 +305,18 @@
             <p>
               <h3>Ваше имя:</h3>
               <label class="visually-hidden" for="user-name">Имя</label>
-              <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+              <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
             </p>
             <p>
               <h3>Ваш e-mail:</h3>
               <label class="visually-hidden" for="user-email">Почта</label>
-              <input class="email-icon-user" id="user-email" type="text" name="email" placeholder="email@example.com">
+              <input class="email-icon-user" id="user-email" type="email" name="email" placeholder="email@example.com" required>
             </p>
             <p>
               <h3>Текст письма:</h3>
               <label class="visually-hidden" for="text-letter">Текст письма</label>
-              <input class="text-icon-user" id="text-letter" type="text" name="text" placeholder="В свободной форме">
+              <textarea class="text-icon-user" id="text-letter" name="text" rows="10" cols="30" placeholder="В свободной форме" required>
+              </textarea>
             </p>
             <button class="button" type="submit">Отправить</button>
           </form>
