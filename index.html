@@ -10,7 +10,10 @@
         <a class="main-header-logo">
           <img src="img/logo.svg" width="220" height="47" alt="Техномарт">
         </a>
-        <!-- Здесь будет форма -->
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+          <label for="search">Поиск:</label>
+          <input class="icon-search" id="search" type="search">
+        </form>
         <a class="bookmarks" href="bookmarks.html">Закладки:0</a>
         <a class="basket" href="basket.html">Корзина:0</a>
         <a class="checkout" href="checkout.html">Оформить заказ</a>
@@ -253,7 +256,6 @@
             заехав в наш офис:
           </p>
           <img src="img/map.png" width="300" height="158" alt="Большая конюшенная ул., 19">
-          <!-- Здесь будет карта -->
           <a class="button" href="map.html">Заблудились? Напишите нам!</a>
         </section>
       </main>
@@ -296,5 +298,36 @@
           </p>
         </section>
       </footer>
+
+        <section class="modal modal-connection">
+          <h2 class="visually-hidden">Заблудились? Напишите нам!</h2>
+          <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <h3>Ваше имя:</h3>
+              <label class="visually-hidden" for="user-name">Имя</label>
+              <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <h3>Ваш e-mail:</h3>
+              <label class="visually-hidden" for="user-email">Почта</label>
+              <input class="email-icon-user" id="user-email" type="text" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <h3>Текст письма:</h3>
+              <label class="visually-hidden" for="text-letter">Текст письма</label>
+              <input class="text-icon-user" id="text-letter" type="text" name="text" placeholder="В свободной форме">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+          <button class="modal-close" type="button">Закрыть</button>
+        </section>
+
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Где мы находимся</h2>
+          <p>
+            <img src="img/map-1.png" width="1736" height="779" alt="Офис расположен по адресу ул. Большая Конюшенная д. 19/8 г. Санкт-Петербург">
+          </p>
+          <button class="modal-close" type="button">Закрыть</button>
+        </section>
     </body>
   </html>
