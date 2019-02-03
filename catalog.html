@@ -62,11 +62,16 @@
       <section class="filters">
         <h2 class="filter-view">Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <!--<fieldset>
+          <fieldset>
             <legend>Цена:</legend>
-            <input class="visually-hidden filter-input filter-input-range" type="range" name="price" min="0" max="30000" step="1000" id="filter-price">
-            <label for="filter-price">Цена</label>
-          </fieldset>-->
+            <div class="range-controls">
+              <input class="visually-hidden filter-input filter-input-range" type="text" name="number" id="range-controls-min">
+              <label for="range-controls-min">0</label>
+              <span class="filter-range">-</span>
+              <input class="visually-hidden filter-input filter-input-range" type="text" name="number" id="range-controls-max">
+              <label for="range-controls-max">30000</label>
+            </div>
+          </fieldset>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
@@ -112,8 +117,8 @@
             <li class="sorting-item-price"><a href="#">По цене</a></li>
             <li class="sorting-item-type"><a href="#">По типу</a></li>
             <li class="sorting-item-functional"><a href="#">По функционалу</a></li>
-            <li class="visually-hidden"><a href="#">По возрастанию</a></li>
-            <li class="visually-hidden"><a href="#">По убыванию</a></li>
+            <li class="sorting-item-arrows"><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+            <li class="sorting-item-arrows"><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
           </ul>
       </section>
       <section class="catalog">
