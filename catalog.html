@@ -64,12 +64,19 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Цена:</legend>
-            <div class="range-controls">
-              <input class="visually-hidden filter-input filter-input-range" type="text" name="number" id="range-controls-min">
-              <label for="range-controls-min">0</label>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <input class="visually-hidden filter-input filter-input-range" type="text" name="number" value="0" id="range-controls-min">
+              <label class="visually-hidden" for="range-controls-min">От</label>
               <span class="filter-range">-</span>
-              <input class="visually-hidden filter-input filter-input-range" type="text" name="number" id="range-controls-max">
-              <label for="range-controls-max">30000</label>
+              <input class="visually-hidden filter-input filter-input-range" type="text" name="number" value="30000" id="range-controls-max">
+              <label class="visually-hidden" for="range-controls-max">До</label>
             </div>
           </fieldset>
           <fieldset>
