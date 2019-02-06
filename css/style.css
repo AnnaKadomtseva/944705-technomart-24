@@ -1,0 +1,296 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Cyprum", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-header-logo a {
+	border: 1px solid #ee3643;
+	background-color: #ee3643;
+}
+
+.main-header-logo a:hover {
+  background-color: #ca2c37;
+}
+
+.main-header-logo a:active {
+  background-color: #ba2732;
+}
+
+.bookmarks,
+.basket, 
+.checkout {
+	color: #ffffff;
+}
+
+.form-search input {
+	font: inherit;
+
+  background-color: #293449;
+}
+
+.main-header-container {
+	font-size: 17px;
+	line-height: 18px;
+	background-color: #293449;
+	color: #ffffff;
+}
+
+.checkout a {
+  background-color: #63a63e;
+}
+
+.name-page h1 {
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+}
+
+.phone span {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+	border: 2px solid white;
+	background-color: #f4f7f9;
+}
+
+.address span {
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+
+.header-contacts {
+	background-color: #f4f7f9;
+}
+
+.header-user {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	background-color: #ffffff;
+	list-style: none;
+}
+
+.header-user a {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.header-user a:hover {
+	color: #ee3643;
+	background-color: #ffffff;
+}
+
+.header-user a:active {
+	color: #e0e0e0;
+	background-color: #ffffff;
+}
+
+.site-navigation {
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+	background-color: #32425c;
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover {
+	background-color: #293449;
+}
+
+.site-navigation a:active {
+	background-color: #1d2739;
+	color: 8e939c;
+}
+
+h2 {
+  font-size: 30px;
+	line-height: 30px;
+	color: #000000;
+}
+
+p {
+	 font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.list {
+	font-size: 18px;
+	line-height: 20px;
+	list-style: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.footer-items {
+	font-size: 18px;
+	line-height: 24px;
+	list-style: none;
+}
+
+.footer-address p {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.footer-products {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffd180;
+	list-style: none;
+}
+
+.most-main-footer {
+	background-color: #32425c;
+  background-image: url("img/footer-1.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.buttom-footer p {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.buttom-footer a {
+	color: #ffd180;
+	background-color: #293449;
+}
+
+.buttom-footer {
+	background-image: url("footer-2.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.social-button {
+  text-align: center;
+}
+
+.social-button ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #212a3a;
+}
+
+.footer-items a,
+.footer-products a {
+	color: #ffffff;
+}
+
+.page-title {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.filter-input:hover + label {
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: #c7c7c7;
+
+  opacity: 0.5;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #ffffff;
+}
+
+.catalog-item a {
+  color: #262626;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.old-price {
+	color: #999999;
+	font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+}
+
+.current-price {
+	color: #ffffff;
+	font-size: 17px;
+  line-height: 18px;
+  border: 1px solid #ee3643;
+  background-color: #ee3643;
+}
+
+.button-purchase {
+	color: #c1dbb2;
+	font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #63a63e;
+  background-color: #63a63e;
+}
+
+.bookmarks {
+	color: d2d5d9;
+	font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #63a63e;
+  background-color: #ffffff;
+}
