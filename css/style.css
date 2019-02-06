@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Cuprum", Arial, sans-serif;
+	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
@@ -15,8 +15,8 @@ a {
 	text-decoration: none;
 }
 
-.main-header-logo a {
-	border: 1px solid #ee3643;
+.main-header-logo {
+	border: 0px solid #ee3643;
 	background-color: #ee3643;
 }
 
@@ -28,8 +28,12 @@ a {
   background-color: #ba2732;
 }
 
-.bookmarks,
-.basket, 
+.main-header-logo a:focus {
+  background-color: #ee3643;
+}
+
+.bookmarks-active,
+.basket,
 .checkout {
 	color: #ffffff;
 }
@@ -40,6 +44,47 @@ a {
   background-color: #293449;
 }
 
+.form-search a:hover {
+  background-color: #212a3a;
+}
+
+.form-search a:focus {
+	background-color: #ffffff;
+}
+
+.bookmarks-active a:hover,
+.basket a:hover {
+  color: #3f4654;
+  background-color: #212a3a;
+}
+
+.bookmarks-active a:active,
+.basket a:active {
+  color: #a2a5a9;
+  background-color: #161d29;
+}
+
+.bookmarks-active a:focus,
+.basket a:focus {
+  color: #a2a5a9;
+  background-color: #161d29;
+}
+
+.checkout a:hover {
+	color: #f4faf1;
+  background-color: #5fbb2d;
+}
+
+.checkout a:active {
+	color: #a2be93;
+  background-color: #518534;
+}
+
+.checkout a:focus {
+	color: #cbe1bf;
+  background-color: #63a63e;
+}
+
 .main-header-container {
 	font-size: 17px;
 	line-height: 18px;
@@ -47,18 +92,18 @@ a {
 	color: #ffffff;
 }
 
-.checkout a {
+.checkout {
   background-color: #63a63e;
 }
 
-.name-page h1 {
+.name-page {
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
 }
 
-.phone span {
+.phone {
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
@@ -66,7 +111,11 @@ a {
 	background-color: #f4f7f9;
 }
 
-.address span {
+.phone a {
+	color: #ee3643;
+}
+
+.address {
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
@@ -120,6 +169,11 @@ a {
 	color: 8e939c;
 }
 
+.main-footer-logo {
+	border: 0px solid #ee3643;
+	background-color: #ee3643;
+}
+
 h2 {
   font-size: 30px;
 	line-height: 30px;
@@ -130,6 +184,17 @@ p {
 	 font-size: 13px;
 	line-height: 24px;
 	color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list {
@@ -156,10 +221,26 @@ p {
 	list-style: none;
 }
 
-.footer-address p {
+.footer-address {
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
+}
+
+.footer-items a:hover {
+  text-decoration: underline;
+}
+
+.footer-products a:hover {
+	text-decoration: underline;
+}
+
+.footer-items a:active {
+  color: #45546c;
+}
+
+.footer-products a:active {
+	color: #998a6e;
 }
 
 .footer-products {
@@ -171,25 +252,46 @@ p {
 
 .most-main-footer {
 	background-color: #32425c;
-  background-image: url("img/footer-1.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
 }
 
-.buttom-footer p {
+.buttom-footer {
 	font-size: 16px;
 	line-height: 18px;
 }
 
-.buttom-footer a {
+.social-button {
+	color: #ffffff;
+	background-color: #212a3a;
+}
+
+.social-button a:hover,
+.social-button a:active {
+  background-color: #ee3643;
+}
+
+.feedback,
+.developed-by {
+  font-size: 16px;
+	line-height: 18px;
+}
+
+.feedback a,
+.developed-by a {
 	color: #ffd180;
-	background-color: #293449;
+}
+
+.feedback a:hover,
+.developed-by a:hover {
+	text-decoration: underline;
+}
+
+.feedback a:active,
+.developed-by a:active {
+	color: #e13643;
 }
 
 .buttom-footer {
-	background-image: url("footer-2.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+	background-color: 293449#;
 }
 
 .social-button {
@@ -200,14 +302,12 @@ p {
   list-style: none;
 }
 
-.social-button {
-  color: #212a3a;
-}
-
 .footer-items a,
 .footer-products a {
 	color: #ffffff;
 }
+
+
 
 .page-title {
 	font-size: 30px;
