@@ -64,16 +64,21 @@ a {
 
 .form-search input {
 	font: inherit;
-
   background-color: #293449;
+  border: 0;
+  outline: 0;
 }
 
-.form-search:hover {
+.icon-search:hover {
   background-color: #212a3a;
+  border: 0;
+  outline: 0;
 }
 
-.form-search:focus {
+.icon-search:focus {
 	background-color: #ffffff;
+  border: 0;
+  outline: 0;
 }
 
 .bookmarks-active:hover,
@@ -198,6 +203,18 @@ a {
 	box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.24);
 }
 
+.main-footer-logo:hover {
+  background-color: #ca2c37;
+}
+
+.main-footer-logo:active {
+  background-color: #ba2732;
+}
+
+.main-footer-logo:focus {
+  background-color: #ee3643;
+}
+
 .list {
 	font-size: 18px;
 	line-height: 20px;
@@ -312,6 +329,18 @@ a {
 	color: #ffffff;
 }
 
+.basket-full:hover {
+  background-color: #ca2c37;
+}
+
+.basket-full:active {
+  background-color: #ba2732;
+}
+
+.basket-full:focus {
+  background-color: #ee3643;
+}
+
 .user {
 	font-size: 21px;
 	line-height: 21px;
@@ -331,9 +360,12 @@ a {
 .user-navigation {
 	font-size: 16px;
 	line-height: 18px;
-	color: #32425c;
 	list-style: none;
 	text-decoration: underline;
+}
+
+.user-navigation a {
+  color: #32425c;
 }
 
 .user-navigation a:hover {
@@ -379,6 +411,7 @@ a {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .filter ul {
@@ -386,6 +419,7 @@ a {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .filter-input + label {
@@ -398,6 +432,12 @@ a {
 
 .filter-input:disabled + label {
   color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-button {
+  color: #000000;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 .catalog-item {
