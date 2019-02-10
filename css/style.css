@@ -40,6 +40,7 @@ a {
 
 .main-header {
   margin-bottom: 60px;
+  background-color: #f4f7f9;
 }
 
 .main-header-logo {
@@ -63,12 +64,13 @@ a {
   background-color: #ee3643;
 }
 
-.container-1 {
-  width: 960px;
-  display: flex;
-  margin-bottom: 45px;
-  align-items: center;
+.container {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+
 
 .bookmarks-active,
 .basket,
@@ -149,6 +151,13 @@ a {
 	color: #ffffff;
 
   width: 100%;
+
+}
+
+.container-logo {
+  display: flex;
+  margin-bottom: 45px;
+  align-items: center;
 }
 
 .checkout {
@@ -170,7 +179,6 @@ a {
 	line-height: 21px;
 	color: #e9292a;
 	border: 2px solid white;
-	background-color: #f4f7f9;
 
   width: 300px;
 }
@@ -185,7 +193,7 @@ a {
 }
 
 .header-contacts {
-	background-color: #f1f5f7;
+  display: flex;
 }
 
 .header-user {
@@ -229,8 +237,6 @@ a {
 
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
   min-height: 60px;
   align-items: center;
 }
@@ -337,6 +343,7 @@ a {
 
 .most-main-footer {
 	background-color: #32425c;
+  display: flex;
 }
 
 .buttom-footer {
