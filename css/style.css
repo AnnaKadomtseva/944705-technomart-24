@@ -38,6 +38,7 @@ a {
 	text-decoration: none;
 }
 
+
 .main-header-logo {
 	border: 0px solid #ee3643;
 	background-color: #ee3643;
@@ -61,6 +62,7 @@ a {
 .checkout {
 	color: #ffffff;
 }
+
 
 .form-search input {
 	font: inherit;
@@ -119,7 +121,6 @@ a {
 	line-height: 18px;
 	background-color: #293449;
 	color: #ffffff;
-}
 
 .checkout {
   color: #ffffff;
@@ -173,6 +174,10 @@ a {
 .header-user a:active {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #ffffff;
+}
+
+.main-navigation {
+  min-height: 60px;
 }
 
 .site-navigation {
