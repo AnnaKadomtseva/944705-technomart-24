@@ -67,7 +67,6 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
-  display: flex;
 }
 
 
@@ -155,6 +154,7 @@ a {
 }
 
 .container-logo {
+  display: flex;
 }
 
 .container-logo a {
@@ -172,6 +172,8 @@ a {
 .header-contacts {
   padding-top: 50px;
   padding-bottom: 40px;
+
+  display: flex;
 }
 
 
@@ -246,6 +248,7 @@ a {
 
   justify-content: space-between;
   min-height: 60px;
+  display: flex;
 }
 
 .site-navigation a {
@@ -272,6 +275,8 @@ a {
   justify-content: space-between;
   padding-top: 70px;
   width: 940px;
+
+  display: flex;
 }
 
 .company-main {
@@ -320,6 +325,9 @@ a {
 	list-style: none;
 }
 
+.footer-items {
+}
+
 .footer-items a {
 	font-size: 18px;
 	line-height: 24px;
@@ -356,14 +364,26 @@ a {
 	list-style: none;
 }
 
+.most-main-footer .container {
+  display: flex;
+}
+
+.logo-address {
+  width: 380px;
+}
+
 .most-main-footer {
 	background-color: #32425c;
+  margin: 0;
 }
 
 .buttom-footer {
 	font-size: 16px;
 	line-height: 18px;
   padding: 35px;
+  margin: 0;
+
+  display: flex;
 }
 
 .protection {
@@ -379,8 +399,6 @@ a {
 	color: #ffffff;
 	background-color: #212a3a;
 
-  min-height: 100px;
-  width: 160px;
 }
 
 .social-button:hover,
@@ -400,6 +418,9 @@ a {
   min-height: 100px;
   width: 320px;
   margin-left: auto;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .feedback a,
@@ -418,12 +439,10 @@ a {
 }
 
 .buttom-footer {
-  display: flex;
 	background-color: #293449;
 }
 
 .social-button {
-  text-align: center;
 }
 
 .social-network {
@@ -437,6 +456,16 @@ a {
 
 .footer-items {
  list-style: none;
+
+ display: flex;
+ width: 550px;
+ justify-content: space-between;
+}
+
+.footer-products {
+  display: flex;
+  width: 550px;
+  justify-content: space-around;
 }
 
 .basket-full {
