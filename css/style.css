@@ -269,7 +269,7 @@ a {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-.index-columns {
+ .index-columns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -378,19 +378,14 @@ a {
 .buttom-footer .container {
 	font-size: 16px;
 	line-height: 18px;
-  padding: 35px;
-  margin: 0;
-
   display: flex;
   justify-content: space-between;
   width: 940px;
-  margin: 0 auto;
 }
 
 .protection {
   color: #ffffff;
 
-  min-height: 100px;
   width: 310px;
 }
 
@@ -413,11 +408,9 @@ a {
 }
 
 .footer-copyright {
-  min-height: 100px;
-  width: 300px;
-
   display: flex;
   justify-content: space-around;
+  width: 300px;
 }
 
 .feedback a,
@@ -658,6 +651,10 @@ a {
   line-height: 20px;
   color: #000000;
   font-weight: bold;
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .old-price {
