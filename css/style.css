@@ -440,6 +440,8 @@ a {
 
 .buttom-footer {
 	background-color: #293449;
+
+  display: flex;
 }
 
 .social-button {
