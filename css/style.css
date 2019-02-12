@@ -275,8 +275,6 @@ a {
   justify-content: space-between;
   padding-top: 70px;
   width: 940px;
-
-  display: flex;
 }
 
 .company-main {
@@ -377,22 +375,23 @@ a {
   margin: 0;
 }
 
-.buttom-footer {
+.buttom-footer .container {
 	font-size: 16px;
 	line-height: 18px;
   padding: 35px;
   margin: 0;
 
   display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .protection {
   color: #ffffff;
 
-  margin: 0;
   min-height: 100px;
   width: 310px;
-  margin-right: 80px;
 }
 
 .social-button {
@@ -414,13 +413,11 @@ a {
 }
 
 .footer-copyright {
-  margin: 0;
   min-height: 100px;
-  width: 320px;
-  margin-left: auto;
+  width: 300px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .feedback a,
@@ -626,12 +623,15 @@ a {
 
 .catalog-item {
   font-family: "PT Sans", Arial, sans-serif;
-	border: 1px solid lightgray;
+	border: 1px solid #e5e5e5;
 
   width: 220px;
   min-height: 320px;
   margin-bottom: 20px;
   margin-right: 20px;
+  position: relative;
+  text-align: center;
+
 }
 
 .catalog-item:nth-child(3n) {
@@ -642,7 +642,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
+  margin: 20px auto;
   margin-bottom: 50px;
 
 
@@ -657,6 +657,7 @@ a {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  font-weight: bold;
 }
 
 .old-price {
@@ -707,16 +708,34 @@ a {
 	border: 3px solid #32425c;
 }
 
-.new {
-	font-size: 4px;
-  line-height: 5px;
-  color: #ffffff;
-  border: 1px solid #ee3643;
-  background-color: #ee3643;
+.catalog-item .flag {
+	position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .flag-new {
+  background: url("img/new-flag.png") no-repeat 0 0;
 }
 
 .pagination-list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.catalog-item-image {
+  width: 218px;
+  height: 170px;
+}
+
+.catalog-item-image img {
+  max-width: 100%;
 }
