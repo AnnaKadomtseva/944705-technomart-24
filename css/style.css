@@ -86,6 +86,7 @@ img {
   width: 140px;
   padding-left: 50px;
   position: relative;
+  text-align: center;
 }
 
 .basket::before {
@@ -93,16 +94,16 @@ img {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 19px;
+  top: 15px;
   left: 15px;
-  background-image: url("img/icon-cart.svg");
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
 }
 
 .basket:hover::before {
-  opacity: 0;
+  opacity: 1;
 }
 
 .basket:active::before {
@@ -121,6 +122,7 @@ img {
   width: 150px;
   padding-left: 60px;
   position: relative;
+  text-align: center;
 }
 
 .bookmarks-active::before {
@@ -128,16 +130,16 @@ img {
   width: 14px;
   height: 16px;
   position: absolute;
-  top: 28px;
+  top: 15px;
   left: 15px;
-  background-image: url("img/icon-bookmark.svg");
+  background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
 }
 
 .bookmarks-active:hover::before {
-  opacity: 0;
+  opacity: 1;
 }
 
 .bookmarks-active:active::before {
@@ -158,11 +160,22 @@ img {
 }
 
 input:focus + .icon {
-  color: #ee3643;
+  fill: #ee3643;
 }
 
 .icon {
-  color: #ffffff;
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.icon:hover {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.icon:active {
+  fill: #ffffff;
+  opacity: 0.5;
 }
 
 
@@ -235,13 +248,16 @@ input:focus + .icon {
 .checkout {
   color: #ffffff;
   background-color: #63a63e;
+  text-align: center;
 }
 
 .header-contacts {
   padding-top: 50px;
   padding-bottom: 40px;
+  position: relative;
 
   display: flex;
+  justify-content: space-around;
 }
 
 
@@ -259,11 +275,34 @@ input:focus + .icon {
 	line-height: 21px;
 	color: #e9292a;
 	border: 2px solid white;
+  background-color: #f1f5f7;
 
-  width: 300px;
+  width: 150px;
   display: block;
+  padding-right: 50px;
+  padding-left: 80px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
+.phone-address {
+  position: relative;
+  width: 275px;
+  height: 75px;
+}
+
+.phone::before {
+  content: "";
+  width: 19;
+  height: 19;
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
 
 .address {
 	font-size: 14px;
@@ -272,22 +311,48 @@ input:focus + .icon {
 
   width: 300px;
   display: block;
+  text-align: center;
 }
 
 .header-user {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
-	background-color: #ffffff;
 	list-style: none;
+
+  display: flex;
+  width: 280px;
+
 }
 
 .entrance {
-  width: 140px;
+  width: 120px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.entrance path {
+  fill: #32425c;
+  opacity: 0.3;
+}
+
+.entrance:hover path {
+  fill: #32425c;
+  opacity: 1;
+}
+
+
+.entrance:active path {
+  fill:#c5c5c5;
 }
 
 .check-in {
-  width: 160px;
+  width: 150px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .header-user a {
@@ -318,7 +383,7 @@ input:focus + .icon {
   min-height: 60px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 50px;
+  padding: 0px auto;
   vertical-align: middle;
 }
 
@@ -506,9 +571,37 @@ input:focus + .icon {
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+
+  background-color: #212a3a;
 }
 
+.social-button:hover {
+  background-color: #ee3643;
+}
+
+.social-button:active {
+  background-color: #ee3643;
+}
+
+.social-button,
+.social-button:hover,
+.social-button:active {
+  fill: #ffffff;
+}
+
+
 .social-network {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 140px;
+  margin: auto;
+  padding: 0 auto;
   list-style: none;
 }
 
@@ -554,7 +647,45 @@ input:focus + .icon {
 	line-height: 21px;
 	color: #000000;
 	border: 1px solid #ffffff;
-	background-color: #ffffff
+	background-color: #ffffff;
+
+  width: 300px;
+  height: 45px;
+}
+
+.name path {
+  fill: #32425c;
+  opacity: 0.3;
+}
+
+.name:hover path {
+  fill: #32425c;
+  opacity: 1;
+}
+
+
+.name:active path {
+  fill:#c5c5c5;
+  opacity: 0.3;
+}
+
+.out path {
+  fill: #32425c;
+  opacity: 0.3;
+}
+
+.out:hover path {
+  fill: #32425c;
+  opacity: 1;
+}
+
+.out:active path {
+  fill:#c5c5c5;
+}
+
+.name:hover {
+  fill: #c5c5c5;
+  opacity: 0.3;
 }
 
 .user a:hover {
@@ -594,6 +725,23 @@ input:focus + .icon {
   margin: 0;
   margin-bottom: 10px;
   min-height: 35px;
+
+  display: flex;
+  position: relative;
+  width: 380px;
+  height: 60px;
+}
+
+.home-page::before {
+  content: "";
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .breadcrumbs a {
@@ -702,6 +850,12 @@ input:focus + .icon {
   margin-right: 0;
 }
 
+.catalog-item-price {
+  display: flex;
+  flex-wrap: wrap;
+  width: 140px;
+}
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -715,6 +869,11 @@ input:focus + .icon {
 
 .catalog-item:hover {
 	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.product-name {
+  width: 170px;
+  text-align: center;
 }
 
 .product-name a {
@@ -866,4 +1025,77 @@ input:focus + .icon {
 
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
+}
+
+
+.modal-map {
+  position: relative;
+  width: 940px;
+  height: 446px;
+  z-index: 5;
+}
+
+.modal-close-map::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 22px;
+  right: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-connection {
+  position: relative;
+  width: 620px;
+  height: 430px;
+  z-index: 6;
+}
+
+.modal-close-connection::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 22px;
+  right: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-basket {
+  position: relative;
+  width: 620px;
+  height: 282px;
+}
+
+.modal-close-basket::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 22px;
+  right: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.mark::before {
+  content: "";
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.pagination-list {
+  display: flex;
 }
