@@ -282,7 +282,7 @@ input:focus + .icon {
 	line-height: 23px;
 	color: #ee3643;
 
-  width: 260px;
+  width: 196px;
 }
 
 .phone {
@@ -328,38 +328,49 @@ input:focus + .icon {
 	list-style: none;
 
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   width: 280px;
+  margin: 0;
+  padding: 0;
 
 }
 
-.entrance {
+
+
+.entrance a {
   width: 120px;
-  border: 1px solid #ffffff;
   background-color: #ffffff;
   text-align: center;
-  margin: 0 10px;
+  margin-right: 10px;
+  padding-right: 48px;
+  padding-left: 27px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.entrance path {
+.entrance a path {
   fill: #32425c;
   opacity: 0.3;
 }
 
-.entrance:hover path {
+.entrance a:hover path {
   fill: #32425c;
   opacity: 1;
 }
 
 
-.entrance:active path {
+.entrance a:active path {
   fill:#c5c5c5;
 }
 
-.check-in {
+.check-in a {
   width: 150px;
   border: 1px solid #ffffff;
   background-color: #ffffff;
   text-align: center;
+  padding: 12px 25px;
+  margin-right: 0;
 }
 
 .header-user a {
@@ -378,6 +389,7 @@ input:focus + .icon {
 }
 
 .site-navigation {
+  padding: 0;
 	font-size: 17px;
 	line-height: 17px;
 	color: #ffffff;
@@ -386,7 +398,8 @@ input:focus + .icon {
 	box-shadow: inset 0px -5px 0px 0px #293449;
 
 
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   min-height: 60px;
   display: flex;
   flex-wrap: wrap;
@@ -398,7 +411,7 @@ input:focus + .icon {
 
   display: block;
   line-height: 60px;
-  padding-left: 20px
+  padding-left: 25px;
   padding-right: 25px;
 }
 
@@ -521,124 +534,23 @@ input:focus + .icon {
   justify-content: space-between;
 }
 
-.title-popular-brends {
+.title-popular-brends a {
   width: 220px;
   height: 145px;
   border: 1px solid #eaeaea;
-  margin-bottom: 20px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.title-popular-brends:active {
+.title-popular-brends {
+  margin-bottom: 20px;
+}
+
+.title-popular-brends a:active {
   opacity: 0.3;
 }
-
-
-/*.bosch img {
-  width: 126px;
-  height: 37px;
-  margin-bottom: 55px;
-  margin-top: 53px;
-  margin-left: 47px;
-  margin-right: 47px;
-}
-
-.bosch:active {
-  opacity: 0.3;
-}
-
-.makita img {
-  width: 123px;
-  height: 40px;
-  margin-bottom: 55px;
-  margin-top: 50px;
-  margin-left: 48px;
-  margin-right: 49px;
-}
-
-.makita:active {
-  opacity: 0.3;
-}
-
-.dewalt img {
-  width: 146px;
-  height: 44px;
-  margin-bottom: 53px;
-  margin-top: 48px;
-  margin-left: 37px;
-  margin-right: 37px;
-}
-
-.dewalt:active {
-  opacity: 0.3;
-}
-
-.interscol img {
-  width: 200px;
-  height: 88px;
-  margin-bottom: 36px;
-  margin-top: 21px;
-  margin-left: 9px;
-  margin-right: 11px;
-}
-
-.interscol:active {
-  opacity: 0.3;
-}
-
-.hitachi img {
-  width: 169px;
-  height: 31px;
-  margin-bottom: 56px;
-  margin-top: 58px;
-  margin-left: 28px;
-  margin-right: 23px;
-}
-
-.hitachi:active {
-  opacity: 0.3;
-}
-
-.lg img {
-  width: 121px;
-  height: 73px;
-  margin-bottom: 37px;
-  margin-top: 35px;
-  margin-left: 48px;
-  margin-right: 51px;
-}
-
-.lg:active {
-  opacity: 0.3;
-}
-
-.aeg img {
-  width: 151px;
-  height: 96px;
-  margin-bottom: 26px;
-  margin-top: 23px;
-  margin-left: 35px;
-  margin-right: 34px;
-}
-
-.aeg:active {
-  opacity: 0.3;
-}
-
-.metabo img {
-  width: 204px;
-  height: 69px;
-  margin-bottom: 42px;
-  margin-top: 34px;
-  margin-left: 10px;
-  margin-right: 6px;
-}
-
-.metabo:active {
-  opacity: 0.3;
-}*/
 
 .title-popular-brends:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
@@ -699,8 +611,13 @@ input:focus + .icon {
   min-height: 420px;
 }
 
+.infomation {
+  background-color: #f4f7f9;
+  padding-top: 67px;
+  padding-bottom: 73px;
+}
+
 .main-footer {
-  margin-top: 80px;
   min-height: 300px;
 }
 
@@ -1357,11 +1274,31 @@ input:focus + .icon {
   display: block;
   background-color: transparent;
   border: 2px solid #dee3e4;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
 
+}
+
+.field-wrap label {
+  display: block;
+  margin-bottom: 13px;
 }
 
 .field-wrap {
   width: 100%;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.button-background {
+  background-color: #f4f4f4;
+  padding: 37px 80px;
+
+  margin: 0;
 }
 
 .field-wrap input:hover,
@@ -1393,6 +1330,7 @@ input:focus + .icon {
 
 .button-user {
   background-color: #f4f4f4;
+
 }
 
 .button-form {
@@ -1416,7 +1354,7 @@ input:focus + .icon {
 .modal-basket {
   position: relative;
   width: 620px;
-  height: 282px;
+  min-height: 282px;
   border-top: 9px solid #ff5357;
 }
 
@@ -1434,17 +1372,55 @@ input:focus + .icon {
 }
 
 .mark {
-  background-image: url("../img/icon-mark.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
+  width: 316px;
+  height: 27px;
+  padding-top: 68px;
+  padding-left: 179px;
+  padding-bottom: 68px;
+}
+
+.mark::before {
+  content: "";
   width: 66px;
   height: 66px;
   position: absolute;
   top: 80px;
   left: 55px;
-  border: 0;
-  background-color: transparent;
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
+
+.checkout-now {
+  width: 99px;
+  padding-left: 59px;
+  padding-right: 62px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.continue {
+  width: 128px;
+  padding-left: 44px;
+  padding-right: 48px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.control-panel {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+
+  align-items: flex-start;
+
+  padding: 37px 80px;
+}
+
 
 .pagination-list {
   display: flex;
