@@ -526,9 +526,17 @@ input:focus + .icon {
   height: 145px;
   border: 1px solid #eaeaea;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bosch img {
+.title-popular-brends:active {
+  opacity: 0.3;
+}
+
+
+/*.bosch img {
   width: 126px;
   height: 37px;
   margin-bottom: 55px;
@@ -630,7 +638,7 @@ input:focus + .icon {
 
 .metabo:active {
   opacity: 0.3;
-}
+}*/
 
 .title-popular-brends:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
