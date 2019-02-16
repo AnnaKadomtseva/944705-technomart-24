@@ -75,6 +75,7 @@ img {
 .container {
   width: 940px;
   margin: 0 auto;
+  position: relative;
 }
 
 
@@ -339,7 +340,7 @@ input:focus + .icon {
 
 
 .entrance a {
-  width: 120px;
+  width: 62px;
   background-color: #ffffff;
   text-align: center;
   margin-right: 10px;
@@ -365,10 +366,8 @@ input:focus + .icon {
 }
 
 .check-in a {
-  width: 150px;
-  border: 1px solid #ffffff;
+  width: 100px;
   background-color: #ffffff;
-  text-align: center;
   padding: 12px 25px;
   margin-right: 0;
 }
@@ -510,8 +509,13 @@ input:focus + .icon {
 
 .section-head {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   background-color: #f9f5f0;
+
+}
+
+.button-brends {
 }
 
 .popular-products,
@@ -872,10 +876,8 @@ input:focus + .icon {
   opacity: 1;
 }
 
-
 .name:active path {
-  fill:#c5c5c5;
-  opacity: 0.3;
+  fill: #32425c;
 }
 
 .out path {
@@ -889,19 +891,15 @@ input:focus + .icon {
 }
 
 .out:active path {
-  fill:#c5c5c5;
+  fill: #32425c;
 }
 
-.name:hover {
-  fill: #c5c5c5;
-  opacity: 0.3;
-}
 
-.user a:hover {
+.user a:hover  {
 	color: #000000;
 }
 
-.user a:active {
+.user a:active  {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -941,7 +939,7 @@ input:focus + .icon {
   height: 60px;
 }
 
-.home-page::before {
+.breadcrumbs-catalog::after {
   content: "";
   width: 14px;
   height: 12px;
@@ -950,7 +948,7 @@ input:focus + .icon {
   right: 0px;
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: left center;
 }
 
 .breadcrumbs a {
@@ -958,6 +956,7 @@ input:focus + .icon {
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
+
 }
 
 .breadcrumbs-current {
@@ -974,9 +973,14 @@ input:focus + .icon {
 	text-transform: uppercase;
 
   margin: 0;
-  margin-bottom: 25px;
   padding: 0;
   min-height: 90px;
+}
+
+.text-page-title {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .filters {
@@ -1402,13 +1406,12 @@ input:focus + .icon {
 }
 
 .continue {
-  width: 128px;
-  padding-left: 44px;
-  padding-right: 48px;
+  background-color: #ffffff;
+  color: #000000;
   padding-top: 14px;
   padding-bottom: 14px;
-  color: #000000;
-  background-color: #ffffff;
+  padding-left: 44px;
+  padding-right: 48px;
 }
 
 .control-panel {
