@@ -163,9 +163,12 @@ img {
   text-align: center;
 }
 
+.icon-search {
+  height: 100%;
+}
+
 .form-search {
   position: relative;
-
 }
 
 input:focus + .icon {
@@ -307,18 +310,6 @@ input:focus + .icon {
   height: 75px;
 }
 
-/*.phone::before {
-  content: "";
-  width: 19px;
-  height: 19px;
-  position: absolute;
-  top: 15px;
-  left: 12px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 1;
-}*/
 
 .address {
 	font-size: 14px;
@@ -538,6 +529,11 @@ input:focus + .icon {
   text-align: center;
 }
 
+.title-popular-brends img {
+
+  vertical-align: middle;
+}
+
 .title-popular-brends:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -744,14 +740,6 @@ input:focus + .icon {
   justify-content: center;
   width: 42px;
   height: 42px;
-
-  /*background-image: url("../img/icon-vk.svg");
-  background-image: url("../img/icon-fb.svg");
-  background-image: url("../img/icon-insta.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: #212a3a;
-  border-radius: 50%;*/
 }
 
 .vk {
@@ -785,12 +773,6 @@ input:focus + .icon {
 .social-button:active {
   background-color: #ee3643;
 }
-
-/*.social-button,
-.social-button:hover,
-.social-button:active {
-  fill: #ffffff;
-}*/
 
 
 .social-network {
@@ -1247,17 +1229,6 @@ input:focus + .icon {
   background-color: transparent;
 }
 
-/*.modal-close-map::after {
-  content: "";
-  width: 21px;
-  height: 21px;
-  position: absolute;
-  top: 22px;
-  right: 19px;
-  background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
 
 .modal-connection {
   font-size: 18px;
@@ -1308,20 +1279,6 @@ input:focus + .icon {
   width: 220px;
 }
 
-/*.name-icon-user {
-  width: 220px;
-  height: 38px;
-}
-
-.email-icon-user {
-  width: 220px;
-  height: 38px;
-}
-
-.text-icon-user {
-  width: 460px;
-  height: 114px;
-}*/
 .button-user {
   background-color: #f4f4f4;
 }
@@ -1344,18 +1301,6 @@ input:focus + .icon {
   background-color: transparent;
 }
 
-/*.modal-close-connection::after {
-  content: "";
-  width: 21px;
-  height: 21px;
-  position: absolute;
-  top: 22px;
-  right: 19px;
-  background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
-
 .modal-basket {
   position: relative;
   width: 620px;
@@ -1375,30 +1320,6 @@ input:focus + .icon {
   border: 0;
   background-color: transparent;
 }
-
-/*.modal-close-basket::after {
-  content: "";
-  width: 21px;
-  height: 21px;
-  position: absolute;
-  top: 22px;
-  right: 19px;
-  background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
-
-./*mark::before {
-  content: "";
-  width: 66px;
-  height: 66px;
-  position: absolute;
-  top: 80px;
-  left: 60px;
-  background-image: url("../img/icon-mark.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
 
 .mark {
   background-image: url("../img/icon-mark.svg");
