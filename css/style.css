@@ -47,7 +47,7 @@ img {
 }
 
 .main-header {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   background-color: #f4f7f9;
 }
 
@@ -283,6 +283,9 @@ input:focus + .icon {
 	line-height: 23px;
 	color: #ee3643;
   margin: 0;
+  font-weight: normal;
+  letter-spacing: normal;
+  font-stretch: normal;
 
   width: 196px;
   margin-left: 53px;
@@ -295,23 +298,18 @@ input:focus + .icon {
 	border: 2px solid white;
   background-color: #f1f5f7;
   background-image: url("../img/icon-phone.svg");
-  background-position: left center;
+  background-position: 15px 6px;
   background-repeat: no-repeat;
+  text-align: center;
 
-
-  width: 150px;
   display: block;
-  padding-right: 50px;
-  padding-left: 80px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
 .phone-address {
   margin: 0;
-  position: relative;
-  width: 275px;
-  height: 75px;
+  width: 270px;
 }
 
 
@@ -320,7 +318,6 @@ input:focus + .icon {
 	line-height: 24px;
 	color: #32425c;
 
-  width: 300px;
   display: block;
   text-align: center;
 }
@@ -340,8 +337,8 @@ input:focus + .icon {
   color: #000000;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: #ffffff;
   display: flex;
 }
@@ -358,7 +355,7 @@ input:focus + .icon {
   margin-left: 10px;
 }
 
-.auth-btn .auth-icon-btn {
+.auth-icon-btn {
   padding-left: 15px;
 }
 
@@ -844,41 +841,50 @@ input:focus + .icon {
 }
 
 .user {
+  margin: 0;
+  padding: 0;
+  width: 299px;
 	font-size: 21px;
 	line-height: 21px;
-	color: #000000;
-	border: 1px solid #ffffff;
-	background-color: #ffffff;
-
-  width: 300px;
-  height: 45px;
+  display: flex;
 }
 
-.name path {
+.name {
+  color: #000000;
+  background-color: #ffffff;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 13px;
+  padding-right: 10px;
+  display: flex;
+}
+
+.name svg {
   fill: #32425c;
   opacity: 0.3;
+  margin-right: 14px;
 }
 
-.name:hover path {
+.name:hover svg {
   fill: #32425c;
   opacity: 1;
 }
 
-.name:active path {
+.name:active svg {
   fill: #32425c;
 }
 
-.out path {
+.out svg {
   fill: #32425c;
   opacity: 0.3;
 }
 
-.out:hover path {
+.out:hover svg {
   fill: #32425c;
   opacity: 1;
 }
 
-.out:active path {
+.out:active svg {
   fill: #32425c;
 }
 
