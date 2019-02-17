@@ -273,7 +273,7 @@ input:focus + .icon {
   position: relative;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
@@ -282,8 +282,10 @@ input:focus + .icon {
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
+  margin: 0;
 
   width: 196px;
+  margin-left: 53px;
 }
 
 .phone {
@@ -306,6 +308,7 @@ input:focus + .icon {
 }
 
 .phone-address {
+  margin: 0;
   position: relative;
   width: 275px;
   height: 75px;
@@ -333,82 +336,44 @@ input:focus + .icon {
   justify-content: space-between;
 }
 
-.personal-area a {
+.auth-btn {
   color: #000000;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 14px;
   padding-bottom: 15px;
   background-color: #ffffff;
+  display: flex;
 }
 
-.personal-area .auth-btn a {
+.auth-btn:hover {
+  color: #ee3643;
+}
+
+.auth-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-user li {
+  margin-left: 10px;
+}
+
+.auth-btn .auth-icon-btn {
   padding-left: 15px;
 }
 
-/*.header-user {
-	font-size: 21px;
-	line-height: 21px;
-	color: #000000;
-	list-style: none;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-
-}*/
-
-
-
-/*.entrance a {
-  width: 62px;
-  background-color: #ffffff;
-  text-align: center;
-  margin-right: 10px;
-  padding-right: 48px;
-  padding-left: 27px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+.auth-icon-btn svg {
+  fill: #c5c5c5;
+  margin-right: 14px;
 }
 
-.entrance a path {
+.auth-icon-btn:hover svg {
   fill: #32425c;
-  opacity: 0.3;
 }
 
-.entrance a:hover path {
-  fill: #32425c;
-  opacity: 1;
+.auth-icon-btn:active svg {
+  fill: #c5c5c5;
 }
-
-
-.entrance a:active path {
-  fill:#c5c5c5;
-}
-
-.check-in a {
-  width: 100px;
-  background-color: #ffffff;
-  padding: 12px 25px;
-  margin-right: 0;
-}*/
-
-/*.header-user a {
-	color: #000000;
-	background-color: #ffffff;
-}
-
-.header-user a:hover {
-	color: #ee3643;
-	background-color: #ffffff;
-}
-
-.header-user a:active {
-	color: rgba(0, 0, 0, 0.3);
-	background-color: #ffffff;
-}*/
 
 .site-navigation {
   padding: 0;
