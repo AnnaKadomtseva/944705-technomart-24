@@ -47,6 +47,7 @@ img {
 }
 
 .main-header {
+  margin: 0;
   padding-bottom: 60px;
   background-color: #f4f7f9;
 }
@@ -88,10 +89,9 @@ img {
 }
 
 .basket {
-  width: 140px;
-  padding-left: 50px;
   position: relative;
-  text-align: center;
+  padding-left: 42px;
+  box-sizing: border-box;
 }
 
 .basket::before {
@@ -119,15 +119,11 @@ img {
   opacity: 0.3;
 }
 
-.checkout {
-  width: 160px;
-}
-
 .bookmarks-active {
-  width: 150px;
-  padding-left: 60px;
+  padding-left: 36px;
   position: relative;
   text-align: center;
+  align-items: center;
 }
 
 .bookmarks-active::before {
@@ -153,6 +149,10 @@ img {
 
 .bookmarks-active:focus::before {
   opacity: 0.3;
+}
+
+input[type="search"]::placeholder {
+  color: #ffffff;
 }
 
 .form-search input {
@@ -242,6 +242,7 @@ input:focus + .icon {
 }
 
 .main-header-container {
+  margin: 0;
 	font-size: 17px;
 	line-height: 18px;
 	background-color: #293449;
@@ -253,12 +254,17 @@ input:focus + .icon {
 
 .container-logo {
   display: flex;
+  justify-content: space-between;
 }
 
 .container-logo a {
   display: flex;
   justify-content: center;
   line-height: 45px;
+
+}
+
+.main-header-logo {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -267,6 +273,10 @@ input:focus + .icon {
   color: #ffffff;
   background-color: #63a63e;
   text-align: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 22px;
+  margin-left: 31px;
 }
 
 .header-contacts {
