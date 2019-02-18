@@ -55,14 +55,12 @@ img {
 .main-header-logo {
 	background-color: #ee3643;
 	box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.24);
-  width: 220px;
+  width: 111;
   height: 47px;
   margin-bottom: -5px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 55px;
+  padding-right: 54px;
 }
-
-
 
 .main-header-logo:hover {
   background-color: #ca2c37;
@@ -82,8 +80,6 @@ img {
   position: relative;
 }
 
-
-
 .bookmarks-active,
 .basket,
 .checkout {
@@ -102,8 +98,8 @@ img {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 12px;
+  left: 17px;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -135,8 +131,8 @@ img {
   width: 14px;
   height: 16px;
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 12px;
+  left: 17px;
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -158,7 +154,7 @@ img {
 input[type="search"]::placeholder {
   color: #ffffff;
   text-align: left;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 .form-search input {
@@ -169,6 +165,7 @@ input[type="search"]::placeholder {
 
   width: 230px;
   text-align: center;
+
 }
 
 .icon-search {
@@ -177,6 +174,7 @@ input[type="search"]::placeholder {
 
 .form-search {
   position: relative;
+  flex-grow: 1;
 }
 
 input:not(:focus):hover + .icon {
@@ -206,7 +204,7 @@ input:focus + .icon {
   opacity: 0.3;
   position: absolute;
   top: 12px;
-  left: 6px;
+  left: 15px;
 }
 
 .bookmarks-active:hover,
@@ -295,7 +293,7 @@ input:focus + .icon {
   letter-spacing: normal;
   font-stretch: normal;
 
-  width: 196px;
+  width: 197px;
   margin-left: 53px;
 }
 
@@ -306,18 +304,20 @@ input:focus + .icon {
 	border: 2px solid white;
   background-color: #f1f5f7;
   background-image: url("../img/icon-phone.svg");
-  background-position: 15px 6px;
+  background-position: 11px 6px;
   background-repeat: no-repeat;
   text-align: center;
 
   display: block;
-  padding-top: 6px;
+  padding-top: 8px;
   padding-bottom: 6px;
+  padding-left: 15px;
 }
 
 .phone-address {
-  margin: 0;
   width: 270px;
+  margin-left: 21px;
+  margin-top: 0;
 }
 
 
@@ -328,6 +328,8 @@ input:focus + .icon {
 
   display: block;
   text-align: center;
+  margin-top: 7px;
+  margin-right: 4px;
 }
 
 .header-user {
@@ -344,9 +346,9 @@ input:focus + .icon {
 .auth-btn {
   color: #000000;
   padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-right: 23px;
+  padding-top: 9px;
+  padding-bottom: 16px;
   background-color: #ffffff;
   display: flex;
 }
