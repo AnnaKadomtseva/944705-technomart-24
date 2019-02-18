@@ -181,26 +181,13 @@ input[type="search"]::placeholder {
 
 input:focus + .icon {
   fill: #ee3643;
-}
-
-.icon {
-  fill: #ffffff;
-  opacity: 0.3;
-  position: absolute;
-  top: 12px;
-  left: 6px;
-}
-
-.icon:hover {
-  fill: #ffffff;
   opacity: 1;
 }
 
-.icon:active {
+input:hover + .icon {
   fill: #ffffff;
-  opacity: 0.5;
+  opacity: 1;
 }
-
 
 .icon-search:hover {
   background-color: #212a3a;
@@ -209,9 +196,17 @@ input:focus + .icon {
 }
 
 .icon-search:focus {
-	background-color: #ffffff;
+  background-color: #ffffff;
   border: 0;
   outline: 0;
+}
+
+.icon {
+  fill: #ffffff;
+  opacity: 0.3;
+  position: absolute;
+  top: 12px;
+  left: 6px;
 }
 
 .bookmarks-active:hover,
@@ -1011,11 +1006,13 @@ input:focus + .icon {
 	line-height: 30px;
 	color: #32425c;
 	text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
   margin: 0;
   padding: 0;
   min-height: 90px;
+
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .text-page-title {
