@@ -53,13 +53,15 @@ img {
 }
 
 .main-header-logo {
-  margin: 0;
 	background-color: #ee3643;
 	box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.24);
-
   width: 220px;
   height: 47px;
+  margin-bottom: -5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
 
 
 .main-header-logo:hover {
@@ -153,6 +155,8 @@ img {
 
 input[type="search"]::placeholder {
   color: #ffffff;
+  text-align: left;
+  padding-left: 30px;
 }
 
 .form-search input {
@@ -181,8 +185,8 @@ input:focus + .icon {
   fill: #ffffff;
   opacity: 0.3;
   position: absolute;
-  top: 20px;
-  left: 15px;
+  top: 12px;
+  left: 6px;
 }
 
 .icon:hover {
@@ -260,14 +264,10 @@ input:focus + .icon {
 .container-logo a {
   display: flex;
   justify-content: center;
-  line-height: 45px;
-
+  line-height: 42px;
 }
 
-.main-header-logo {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 
 .checkout {
   color: #ffffff;
