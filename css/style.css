@@ -179,13 +179,13 @@ input[type="search"]::placeholder {
   position: relative;
 }
 
-input:focus + .icon {
-  fill: #ee3643;
+input:not(:focus):hover + .icon {
+  fill: #ffffff;
   opacity: 1;
 }
 
-input:hover + .icon {
-  fill: #ffffff;
+input:focus + .icon {
+  fill: #ee3643;
   opacity: 1;
 }
 
