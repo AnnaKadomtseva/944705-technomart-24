@@ -501,13 +501,24 @@ input:focus + .icon {
 
 .section-head {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #f9f5f0;
-
+  padding-left: 30px;
+  padding-right: 24px;
 }
 
 .button-brends {
+  display: inline-block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 69px;
+  padding-right: 70px;
+}
+
+.button-popular-products {
+  display: inline-block;
+  padding: 14px 55px;
 }
 
 .popular-products,
@@ -518,11 +529,6 @@ input:focus + .icon {
   text-transform: uppercase;
 }
 
-.button-popular-products,
-.button-brends {
-  width: 253px;
-  height: 38px;
-}
 
 .popular-brends {
   display: flex;
@@ -1018,43 +1024,57 @@ input:focus + .icon {
 	color: rgba(50, 66, 92, 0.3);
 }
 
-.container ul {
-	list-style: none;
-}
-
 .breadcrumbs {
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
-  min-height: 35px;
-
   display: flex;
-  position: relative;
-  width: 380px;
-  height: 60px;
+  list-style: none;
+  margin-top: 23px;
+  margin-bottom: 22px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.breadcrumbs-catalog::after {
+.breadcrumbs li {
+  position: relative;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+.home-page a::before {
+  display: block;
+  margin-top: 4px;
   content: "";
   width: 14px;
   height: 12px;
-  position: absolute;
-  top: 20px;
-  right: 0px;
+  position: static;
+  top: 4px;
+  left: 0px;
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
-  background-position: left center;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  width: 8px;
+  height: 12px;
+  position: absolute;
+  top: 4px;
+  right: -24px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs-current::after {
+  display: none;
 }
 
 .breadcrumbs a {
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 13px;
-	line-height: 18px;
-	color: #000000;
-
-}
-
-.breadcrumbs-current {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
