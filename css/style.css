@@ -598,8 +598,7 @@ input:focus + .icon {
 }
 
 .company-main {
-  width: 550px;
-  min-height: 420px;
+  width: 519px;
   margin-right: 120px;
 }
 
@@ -626,7 +625,7 @@ input:focus + .icon {
   position: relative;
   margin: 0;
   padding-left: 40px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .list li::before {
@@ -640,10 +639,11 @@ input:focus + .icon {
 }
 
 .company-main ul {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .button-company-main {
+  display: inline-block;
   padding-top: 14px;
   padding-bottom: 12px;
   padding-left: 41px;
@@ -651,6 +651,7 @@ input:focus + .icon {
 }
 
 .button-contacts {
+  display: inline-block;
   padding-top: 14px;
   padding-bottom: 12px;
   padding-left: 63px;
@@ -658,12 +659,12 @@ input:focus + .icon {
 }
 
 .contacts-main img {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  display: block;
 }
 
 .contacts-main {
-  width: 390px;
-  min-height: 420px;
+  width: 300px;
 }
 
 .infomation {
@@ -673,6 +674,7 @@ input:focus + .icon {
 }
 
 .main-footer {
+  margin-top: 86px;
   min-height: 300px;
 }
 
