@@ -1099,15 +1099,65 @@ input:focus + .icon {
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
+
+}
+
+.filter-view {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-left: 18px;
+  padding-right: 149px;
+  background-color: #f7f3ec;
+  font-weight: normal;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f3ec;
+  margin-top: 20px;
+  width: 700px;
+  /*padding-right: 19px;
+  padding-left: 106px;*/
+}
+
+.sorting-view {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-left: 19px;
+}
+
+.sorting-item {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 106px;
+  list-style: none;
+}
+
+.sorting-item a {
+  color: #000000;
 }
 
 .filters {
   width: 220px;
-  min-height: 1250px;
 }
 
 .filter fieldset {
   border: none;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .filter legend {
@@ -1116,6 +1166,7 @@ input:focus + .icon {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .filter ul {
@@ -1124,21 +1175,79 @@ input:focus + .icon {
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.filter-input + label {
-  color: #000000;
+.filter-option {
+  margin-bottom: 17px;
+  padding-left: 35px;
 }
 
-.filter-input:hover + label {
-  color: #000000;
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
-.filter-input:disabled + label {
-  color: rgba(0, 0, 0, 0.4);
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  left: -35px;
+  top: 0;
+  position: absolute;
+
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -35px;
+  top: -3px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -35px;
+  top: -3px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  display: inline-block;
+  padding: 15px 39px;
   color: #000000;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
