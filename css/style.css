@@ -673,14 +673,7 @@ input:focus + .icon {
   width: 300px;
 }
 
-.infomation {
-  background-color: #f4f7f9;
-  padding-top: 67px;
-  padding-bottom: 73px;
-}
-
 .main-footer {
-  margin-top: 86px;
   min-height: 300px;
 }
 
@@ -1081,26 +1074,7 @@ input:focus + .icon {
 	color: #000000;
 }
 
-.page-title {
-	font-size: 30px;
-	line-height: 30px;
-	color: #32425c;
-	text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  min-height: 90px;
 
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-}
-
-.text-page-title {
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
-
-}
 
 .filter-view {
   font-size: 13px;
@@ -1138,13 +1112,42 @@ input:focus + .icon {
 
 .sorting-item {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-right: 106px;
+  margin-right: 17px;
+  margin-left: 139px;
   list-style: none;
 }
 
+.sorting-item li {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  opacity: 0.18;
+  text-transform: uppercase;
+  margin-right: 60px;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-item li:hover {
+  opacity: 1;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-item li:active {
+  color: #ee3643;
+  opacity: 1;
+  border-bottom: none;
+}
+
+.sorting-item .sorting-item-arrows {
+  margin-right: 21px;
+}
+
 .sorting-item a {
+  display: flex;
   color: #000000;
 }
 
@@ -1461,6 +1464,7 @@ input:focus + .icon {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 60px;
 }
 
 .pagination-item {
@@ -1494,6 +1498,31 @@ input:focus + .icon {
 
 .pagination-item-next {
   margin-right: 0;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-top: 67px;
+  padding-bottom: 25px;
+  font-weight: normal;
+}
+
+.text-page-title {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+  padding-bottom: 73px;
+}
+
+.infomation {
+  background-color: #f4f7f9;
+  width: 100%;
 }
 
 .catalog-item-image {
