@@ -1074,7 +1074,18 @@ input:focus + .icon {
 	color: #000000;
 }
 
-
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  padding-right: 742px;
+  padding-left: 30px;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  background-color: #f2f6f8;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 
 .filter-view {
   font-size: 13px;
@@ -1096,18 +1107,19 @@ input:focus + .icon {
   justify-content: space-between;
   background-color: #f7f3ec;
   margin-top: 20px;
-  width: 700px;
-  /*padding-right: 19px;
-  padding-left: 106px;*/
+  padding-right: 17px;
+  padding-left: 19px;
+  padding-top: 14px;
+  padding-bottom: 15px;
 }
 
 .sorting-view {
+  margin: 0;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   font-weight: normal;
-  margin-left: 19px;
 }
 
 .sorting-item {
@@ -1116,7 +1128,6 @@ input:focus + .icon {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-right: 17px;
   margin-left: 139px;
   list-style: none;
 }
@@ -1125,30 +1136,79 @@ input:focus + .icon {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
-  opacity: 0.18;
   text-transform: uppercase;
-  margin-right: 60px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+.sorting-item a {
+  color: /*rgba(0, 0, 0, 0.3)*/#000000;
+  opacity: 0.5;
+
+}
+
+.sorting-item-price a,
+.sorting-item-type a,
+.sorting-item-functional a {
   border-bottom: 1px dotted #ee3643;
 }
 
-.sorting-item li:hover {
+.sorting-item-price a:hover,
+.sorting-item-type a:hover,
+.sorting-item-functional a:hover {
+  color: #000000;
   opacity: 1;
   border-bottom: 1px solid #ee3643;
 }
 
-.sorting-item li:active {
-  color: #ee3643;
+/*.sorting-item a:hover {
+  color: #000000;
+  opacity: 1;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-item-arrow .sorting-item a {
+  border-bottom: none;
+}*/
+
+
+.sorting-item .sorting-item-arrows {
+  margin-right: 4px;
+  margin-left: 4px;
+  border-bottom: none;
+}
+
+.sorting-item .sorting-item-arrows:last-child {
+  margin-right: 0;
+}
+
+.sorting-item-arrow {
+  display: flex;
+  align-items: center;
+  width: 11px;
+  height: 10px;
+}
+
+.sorting-item-arrow svg {
+  fill: /*rgba(0, 0, 0, 0.3)*/#000000;
+  opacity: 0.5;
+  border-bottom: none;
+}
+
+.sorting-item-arrow:hover svg {
+  fill: #000000;
   opacity: 1;
   border-bottom: none;
 }
 
-.sorting-item .sorting-item-arrows {
-  margin-right: 21px;
+.sorting-item-select a {
+  color: #ee3643;
+  border-bottom: none;
 }
 
-.sorting-item a {
-  display: flex;
-  color: #000000;
+.sorting-item-select svg {
+  fill: #ee3643;
+  opacity: 1;
 }
 
 .filters {
@@ -1206,7 +1266,6 @@ input:focus + .icon {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: var(#b5b5b5);
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1217,7 +1276,6 @@ input:focus + .icon {
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
-  background-color: var(#c5c5c5);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1232,7 +1290,6 @@ input:focus + .icon {
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: var(#c5c5c5);
 }
 
 .filter-input-radio:checked + label::after {
@@ -1245,7 +1302,6 @@ input:focus + .icon {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: var(#c5c5c5);
 }
 
 .filter-input-checkbox + label::before:hover {
@@ -1256,8 +1312,8 @@ input:focus + .icon {
   background-color: var(#b5b5b5);
 }
 
-.filter-input-checkbox + label::before:disabled,
-.filter-input-checkbox:checked + label::after:disabled {
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:checked:disabled + label::after {
   opacity: 0.3;
 }
 
@@ -1500,7 +1556,7 @@ input:focus + .icon {
   margin-right: 0;
 }
 
-.page-title {
+.page-title-end {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
@@ -1520,7 +1576,7 @@ input:focus + .icon {
   padding-bottom: 73px;
 }
 
-.infomation {
+.infomation-end {
   background-color: #f4f7f9;
   width: 100%;
 }
