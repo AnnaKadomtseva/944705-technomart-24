@@ -1122,17 +1122,16 @@ input:focus + .icon {
   font-weight: normal;
 }
 
-.sorting-item {
+.sorting-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-left: 139px;
   list-style: none;
 }
 
-.sorting-item li {
+.sorting-list li {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1142,43 +1141,23 @@ input:focus + .icon {
 }
 
 .sorting-item a {
-  color: /*rgba(0, 0, 0, 0.3)*/#000000;
-  opacity: 0.5;
-
-}
-
-.sorting-item-price a,
-.sorting-item-type a,
-.sorting-item-functional a {
+  color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
+  white-space: nowrap;
 }
 
-.sorting-item-price a:hover,
-.sorting-item-type a:hover,
-.sorting-item-functional a:hover {
+.sorting-item a:hover {
   color: #000000;
   opacity: 1;
   border-bottom: 1px solid #ee3643;
 }
 
-/*.sorting-item a:hover {
-  color: #000000;
-  opacity: 1;
-  border-bottom: 1px solid #ee3643;
+.sorting-list .sorting-item-arrows {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.sorting-item-arrow .sorting-item a {
-  border-bottom: none;
-}*/
-
-
-.sorting-item .sorting-item-arrows {
-  margin-right: 4px;
-  margin-left: 4px;
-  border-bottom: none;
-}
-
-.sorting-item .sorting-item-arrows:last-child {
+.sorting-list .sorting-item-arrows:last-child {
   margin-right: 0;
 }
 
@@ -1189,21 +1168,22 @@ input:focus + .icon {
   height: 10px;
 }
 
+.sorting-item-arrow a {
+  border-bottom: none;
+}
+
 .sorting-item-arrow svg {
-  fill: /*rgba(0, 0, 0, 0.3)*/#000000;
-  opacity: 0.5;
+  fill: #c5c5c5;
   border-bottom: none;
 }
 
 .sorting-item-arrow:hover svg {
   fill: #000000;
   opacity: 1;
-  border-bottom: none;
 }
 
 .sorting-item-select a {
   color: #ee3643;
-  border-bottom: none;
 }
 
 .sorting-item-select svg {
