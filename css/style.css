@@ -1323,7 +1323,7 @@ input:focus + .icon {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 218px;
   position: relative;
 }
 
@@ -1331,9 +1331,11 @@ input:focus + .icon {
   margin-right: 0;
 }
 
-.catalog-item-price {
-
+.catalog-item-price:nth-child(3n) {
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
+
 
 .catalog-list {
   display: flex;
@@ -1342,8 +1344,6 @@ input:focus + .icon {
   padding: 0;
   margin: 20px auto;
   margin-bottom: 50px;
-
-
   list-style: none;
 }
 
@@ -1365,18 +1365,27 @@ input:focus + .icon {
   line-height: 20px;
   color: #000000;
   font-weight: bold;
+}
+
+.product-name {
   margin: 12px 33px 18px 32px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  text-align: center;
+}
+
+.catalog-item-price {
+  margin: 0;
 }
 
 .old-price {
+  font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   color: #999999;
   text-decoration: line-through;
-  margin-right: 75px;
-  margin-left: 78px;
+  margin-right: 73px;
+  margin-left: 75px;
+  margin-bottom: 13px;
+  display: block;
 }
 
 .current-price {
@@ -1388,29 +1397,26 @@ input:focus + .icon {
   border-radius: 3px;
 
   position: relative;
-  margin: 13px 36px 21px 43px;
-  padding: 13px 40px 13px 36px;
+  width: 65px;
+  margin: 0 36px;
+  margin-bottom: 20px;
+  padding: 11px 40px 11px 36px;
+  display: block;
 }
 
 .current-price:after {
   content: "";
-
   position: absolute;
   top: 0;
   right: -20px;
-
   width: 0;
   height: 0;
-
   border: 20px solid white;
   border-left-color: #ee3643;
 }
 
 .button-purchase {
-	font-size: 14px;
-  line-height: 18px;
   color: #ffffff;
-  border: 3px solid #63a63e;
   background-color: #63a63e;
   box-shadow: inset 0px -3px 0px 0px #367315;
   }
@@ -1418,14 +1424,15 @@ input:focus + .icon {
 .button-purchase,
 .bookmarks {
   display: block;
-  width: 130px;
   margin: 0 auto;
-  margin-bottom: 7px;
-  padding: 7px 0;
+  margin-bottom: 8px;
+  padding: 13px 0;
   border-radius: 3px;
   font-weight: normal;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .button-purchase:hover {
@@ -1434,31 +1441,36 @@ input:focus + .icon {
 
 .button-purchase:active {
   background-color: #518534;
+  box-shadow: none;
 }
 
 .bookmarks {
-	font-size: 14px;
-  line-height: 18px;
   border: 3px solid #63a63e;
   background-color: #ffffff;
   color: #32425c;
-  border-bottom-color: #63a63e;
 }
 
 .bookmarks:hover {
-	border: 3px solid #32425c;
+	border-bottom: #32425c;
 }
 
 .bookmarks:active {
 	color: rgba(50, 66, 92, 0.3);
-	border: 3px solid #32425c;
+	border-bottom: #32425c;
 }
 
-.purchase-bookmarks {
+.catalog-item .purchase-bookmarks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 164px;
+  padding: 40px 0;
+  z-index: 10;
   display: none;
 }
 
-.purchase-bookmarks:hover {
+.catalog-item .purchase-bookmarks:hover {
   display: block;
 }
 
@@ -1476,7 +1488,7 @@ input:focus + .icon {
 }
 
 .catalog-item .flag-new {
-  background: url("img/new-flag.png") no-repeat 0 0;
+  background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .pagination-list {
