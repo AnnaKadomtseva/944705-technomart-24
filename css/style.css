@@ -534,6 +534,7 @@ input:focus + .icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style: none;
 }
 
 .title-popular-brends a {
@@ -1419,14 +1420,40 @@ input:focus + .icon {
   color: #ffffff;
   background-color: #63a63e;
   box-shadow: inset 0px -3px 0px 0px #367315;
+  width: 41px;
+  padding: 14px 47px;
+  margin: 0;
+  position: relative;
+  }
+
+.button-purchase::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+  }
+
+  .button-purchase:hover::before {
+    opacity: 1;
+  }
+
+  .button-purchase:active::before {
+    opacity: 1;
   }
 
 .button-purchase,
 .bookmarks {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 8px;
-  padding: 13px 0;
+  padding: 13px 45px;
   border-radius: 3px;
   font-weight: normal;
   text-decoration: none;
@@ -1448,15 +1475,18 @@ input:focus + .icon {
   border: 3px solid #63a63e;
   background-color: #ffffff;
   color: #32425c;
+  width: 67px;
+  padding: 14px 29px;
+  white-space: nowrap;
 }
 
 .bookmarks:hover {
-	border-bottom: #32425c;
+	border-color: #32425c;
 }
 
 .bookmarks:active {
 	color: rgba(50, 66, 92, 0.3);
-	border-bottom: #32425c;
+	border-color: #32425c;
 }
 
 .catalog-item .purchase-bookmarks {
@@ -1464,14 +1494,15 @@ input:focus + .icon {
   top: 0;
   left: 0;
   width: 218px;
-  height: 164px;
-  padding: 40px 0;
+  padding: 35px 0;
   z-index: 10;
-  display: none;
+  opacity: 0;
+  background-color: #ffffff;
+  margin-bottom: 0;
 }
 
 .catalog-item .purchase-bookmarks:hover {
-  display: block;
+  opacity: 1;
 }
 
 .catalog-item .flag {
@@ -1566,20 +1597,6 @@ input:focus + .icon {
 .catalog-item-image img {
   max-width: 100%;
 }
-
-.purchase-bookmarks {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 218px;
-  height: 88px;
-  padding: 40px 0;
-
-  background-color: rgba(255,255,255,0.9);
-  z-index: 10;
-}
-
 
 .modal-map {
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
