@@ -1333,7 +1333,6 @@ input:focus + .icon {
 }
 
 .catalog-item-price:nth-child(3n) {
-  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -1379,6 +1378,7 @@ input:focus + .icon {
 
 .catalog-item-price {
   margin: 0;
+  margin-top: auto;
 }
 
 .old-price {
@@ -1402,11 +1402,13 @@ input:focus + .icon {
   border-radius: 3px;
 
   position: relative;
-  width: 65px;
+  width: 141px;
   margin: 0 36px;
   margin-bottom: 20px;
-  padding: 11px 40px 11px 36px;
+  height: 38px;
+  padding: 13px 35px 13px 30px;
   display: block;
+  box-sizing: border-box;
 }
 
 .current-price:after {
@@ -1416,7 +1418,7 @@ input:focus + .icon {
   right: -20px;
   width: 0;
   height: 0;
-  border: 20px solid white;
+  border: 19px solid white;
   border-left-color: #ee3643;
 }
 
