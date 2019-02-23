@@ -50,6 +50,7 @@ img {
   margin: 0;
   padding-bottom: 60px;
   background-color: #f4f7f9;
+  margin-bottom: 59px;
 }
 
 .main-header-logo {
@@ -422,7 +423,6 @@ input:focus + .icon {
 .products-service {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 59px;
   margin-right: -20px;
 }
 
@@ -584,6 +584,7 @@ input:focus + .icon {
   box-sizing: border-box;
   margin-right: 20px;
   margin-bottom: 20px;
+  margin-bottom: 0;
   position: relative;
   min-height: 266px;
   overflow: hidden;
@@ -662,10 +663,11 @@ input:focus + .icon {
   justify-content: space-between;
   align-items: center;
   background-color: #f9f5f0;
-  padding-top: 25px;
-  padding-bottom: 26px;
+  padding-top: 21px;
+  padding-bottom: 22px;
   padding-left: 30px;
   padding-right: 24px;
+  margin-bottom: 20px;
 }
 
 .button-brends {
@@ -681,12 +683,9 @@ input:focus + .icon {
   padding: 14px 55px;
 }
 
-.popular-products {
-  margin: 0;
-}
-
 .popular-products,
-.brends {
+.brend {
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -695,10 +694,14 @@ input:focus + .icon {
 
 
 .popular-brends {
+  margin: 0;
+  padding: 0;
+  margin-right: -20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
+  margin-bottom: 55px;
 }
 
 .title-popular-brends a {
@@ -712,7 +715,10 @@ input:focus + .icon {
 }
 
 .title-popular-brends {
+  margin-right: 20px;
   margin-bottom: 20px;
+  width: 220px;
+  min-height: 145px;
 }
 
 .title-popular-brends a:active {
@@ -727,31 +733,61 @@ input:focus + .icon {
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
+.bottom-content {
+  width: 100%;
+  background-color: #f4f7f9;
+  padding-top: 68px;
+  padding-bottom: 100px;
+  margin-bottom: 70px;
+}
+
+.service {
+  width: 389px;
+  margin-bottom: 74px;
+}
+
 .service-headline {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  font-weight: normal;
 }
+
+.description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
  .services {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
+  font-weight: normal;
+ }
+
+ .service-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
  }
 
  .service-item a {
-  font-size: 21px;
-  line-height: 30px;
   color: #ffffff;
-  background-color: #32425c;
-  box-shadow: 0px 1px 0 0 var(--dark), inset 0px 1px 0 0 #405069;
+  padding: 19px 23px 22px 23px;
+  display: inline-block;
  }
 
- .service-item a .delivery {
-  color: #32425c;
-  background-color: #ffffff;
- }
+.service-item li {
+  width: 240px;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 30px;
+  background-color: #32425c;
+  box-shadow: 0px 1px 0 0 var(--dark), inset 0px 1px 0 0 #405069;
+}
 
 .delivery-cargo {
   background-image: url("../img/delivery-cargo.png");
@@ -764,8 +800,8 @@ input:focus + .icon {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 70px;
   width: 940px;
+  margin-bottom: 86px;
 }
 
 .company-main {
@@ -1276,6 +1312,7 @@ input:focus + .icon {
   padding-left: 19px;
   padding-top: 14px;
   padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .sorting-view {
@@ -1492,9 +1529,6 @@ input:focus + .icon {
   position: relative;
 }
 
-.catalog-item:nth-child(3n) {
-  margin-right: 0;
-}
 
 .catalog-item-price:nth-child(3n) {
   padding-bottom: 20px;
@@ -1503,11 +1537,12 @@ input:focus + .icon {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
   padding: 0;
-  margin: 20px 0;
+  margin: 0;
   margin-bottom: 50px;
   list-style: none;
+  margin-right: -20px;
+  margin-bottom: 20px;
 }
 
 .catalog-item:hover {
@@ -1537,6 +1572,7 @@ input:focus + .icon {
 .product-name {
   margin: 12px 33px 18px 32px;
   text-align: center;
+  text-transform: none;
 }
 
 .catalog-item-price {
@@ -1607,11 +1643,11 @@ input:focus + .icon {
   opacity: 0.3;
   }
 
-  .button-purchase:hover::before {
+.button-purchase:hover::before {
     opacity: 1;
   }
 
-  .button-purchase:active::before {
+.button-purchase:active::before {
     opacity: 1;
   }
 
@@ -1693,6 +1729,7 @@ input:focus + .icon {
   margin: 0;
   list-style: none;
   margin-bottom: 60px;
+  margin-top: 32px;
 }
 
 .pagination-item {
