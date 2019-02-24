@@ -731,8 +731,7 @@ input:focus + .icon {
   width: 100%;
   background-color: #f4f7f9;
   padding-top: 68px;
-  padding-bottom: 100px;
-  margin-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .service {
@@ -826,7 +825,7 @@ input:focus + .icon {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: transparent;
-  min-height: 282px;
+  min-height: 283px;
 }
 
 .guarantee {
@@ -839,8 +838,8 @@ input:focus + .icon {
 }
 
 .credit-service {
+  min-height: 283px;
   margin-top: 88px;
-  min-height: 465px;
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   background-position: 165px 3px;
@@ -858,7 +857,8 @@ input:focus + .icon {
   flex-direction: row;
   justify-content: space-between;
   width: 940px;
-  margin-bottom: 86px;
+  padding-bottom: 86px;
+  padding-top: 82px;
 }
 
 .company-main {
@@ -867,6 +867,7 @@ input:focus + .icon {
 }
 
 .company-info {
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -2102,13 +2103,8 @@ input:focus + .icon {
 }
 
 .checkout-now {
-  width: 99px;
-  padding-left: 59px;
-  padding-right: 62px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  color: #ffffff;
-  border-radius: 2px;
+  min-width: 220px;
+  box-sizing: border-box;
 }
 
 .continue {
@@ -2135,49 +2131,8 @@ input:focus + .icon {
   display: flex;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
 
 .modal {
-  position: fixed;
-  display: none;
   color: #000000;
   background-color: #ffffff;
 }
@@ -2187,13 +2142,5 @@ input:focus + .icon {
   line-height: 30px;
 }
 
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
-.modal-error {
-  animation: shake 0.6s;
-}
 
 
