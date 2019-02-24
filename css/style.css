@@ -35,6 +35,9 @@ body {
 
   background-color: #ee3643;
   border: none;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
 a {
@@ -50,7 +53,6 @@ img {
   margin: 0;
   padding-bottom: 60px;
   background-color: #f4f7f9;
-  margin-bottom: 59px;
 }
 
 .main-header-logo {
@@ -424,6 +426,7 @@ input:focus + .icon {
   display: flex;
   flex-wrap: wrap;
   margin-right: -20px;
+  margin-top: 59px;
 }
 
 .main-products {
@@ -628,9 +631,9 @@ input:focus + .icon {
 
 .button-catalog {
   margin: 0;
-  padding: 12px 46px;
-  display: inline-block;
   margin-top: 124px;
+  min-width: 195px;
+  box-sizing: border-box;
 }
 
 .button-catalog:hover {
@@ -671,20 +674,14 @@ input:focus + .icon {
 }
 
 .button-brends {
-  display: inline-block;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 69px;
-  padding-right: 70px;
+  min-width: 253px;
 }
 
 .button-popular-products {
-  display: inline-block;
-  padding: 14px 55px;
+  min-width: 253px;
 }
 
-.popular-products,
-.brend {
+.popular {
   margin: 0;
   font-size: 30px;
   line-height: 30px;
@@ -721,15 +718,12 @@ input:focus + .icon {
   min-height: 145px;
 }
 
-.title-popular-brends a:active {
-  opacity: 0.3;
-}
-
-.title-popular-brends:hover {
+.title-popular-brends a:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.title-popular-brends:active {
+.title-popular-brends a:active {
+  opacity: 0.3;
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -742,11 +736,12 @@ input:focus + .icon {
 }
 
 .service {
-  width: 389px;
-  margin-bottom: 74px;
+  padding-bottom: 74px;
 }
 
 .service-headline {
+  margin: 0;
+  margin-bottom: 48px;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
@@ -755,12 +750,15 @@ input:focus + .icon {
 }
 
 .description {
+  margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
  .services {
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
@@ -768,32 +766,91 @@ input:focus + .icon {
   font-weight: normal;
  }
 
- .service-item {
-  list-style: none;
+ .service-information-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+ .service-information {
+  width: 620px;
   margin: 0;
   padding: 0;
  }
 
+ .service-item {
+  width: 240px;
+  list-style: none;
+  margin: 0;
+  margin-right: 80px;
+  padding: 0;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  background-position: 230px -46px;
+  background-color: transparent;
+ }
+
  .service-item a {
   color: #ffffff;
-  padding: 19px 23px 22px 23px;
-  display: inline-block;
+  display: block;
+  line-height: 61px;
+  padding: 0 23px 0 23px;
+  font-weight: bold;
+ }
+
+ .service-item a:hover {
+  background-color: #293449;
  }
 
 .service-item li {
+  margin: 0;
   width: 240px;
   box-sizing: border-box;
+
   font-size: 21px;
   line-height: 30px;
   background-color: #32425c;
-  box-shadow: 0px 1px 0 0 var(--dark), inset 0px 1px 0 0 #405069;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+
+
+.delivery-active a {
+  background-color: #ffffff;
+  color: #32425c;
 }
 
 .delivery-cargo {
   background-image: url("../img/delivery-cargo.png");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right bottom;
   background-color: transparent;
+  min-height: 282px;
+}
+
+.guarantee {
+  margin-top: 68px;
+  min-height: 283px;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: transparent;
+}
+
+.credit-service {
+  margin-top: 88px;
+  min-height: 465px;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: 165px 3px;
+  background-color: transparent;
+}
+
+.button-request {
+  min-width: 195px;
+  box-sizing: border-box;
+  margin-top: 30px;
 }
 
  .index-columns {
@@ -850,19 +907,13 @@ input:focus + .icon {
 }
 
 .button-company-main {
-  display: inline-block;
-  padding-top: 14px;
-  padding-bottom: 12px;
-  padding-left: 41px;
-  padding-right: 40px;
+  min-width: 220px;
+  box-sizing: border-box;
 }
 
 .button-contacts {
-  display: inline-block;
-  padding-top: 14px;
-  padding-bottom: 12px;
-  padding-left: 63px;
-  padding-right: 59px;
+  min-width: 300px;
+  box-sizing: border-box;
 }
 
 .contacts-main img {
@@ -1412,6 +1463,87 @@ input:focus + .icon {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.range-filter {
+  width: 200px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  background-color: #f7f3ec;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 152px;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.filter-range {
+  font-size: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 200px;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls input {
+  font-size: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  color: #000000;
+  width: 45px;
+  padding: 12px 20px;
+  border: none;
+  background: #f7f3ec;
 }
 
 .filter ul {
