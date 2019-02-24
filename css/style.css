@@ -2135,7 +2135,7 @@ input:focus + .icon {
 .modal {
   color: #000000;
   background-color: #ffffff;
-  /*display: none;*/
+  display: none;
 }
 
 .modal .mark {
