@@ -63,6 +63,7 @@ img {
   margin-bottom: -5px;
   padding-left: 55px;
   padding-right: 54px;
+  align-items: center;
 }
 
 .main-header-logo:hover {
@@ -87,6 +88,7 @@ img {
 .basket,
 .checkout {
   color: #ffffff;
+  align-items: center;
 }
 
 .basket {
@@ -363,6 +365,7 @@ input:focus + .icon {
   padding-bottom: 12px;
   background-color: #ffffff;
   display: flex;
+  align-items: center;
 }
 
 .auth-btn:hover {
@@ -419,6 +422,7 @@ input:focus + .icon {
   line-height: 60px;
   padding-left: 25px;
   padding-right: 25px;
+  align-items: center;
 }
 
 .site-navigation a:hover {
@@ -501,6 +505,7 @@ input:focus + .icon {
   color: #ffffff;
   text-transform: uppercase;
   display: block;
+  align-items: center;
   box-sizing: border-box;
   width: 135px;
   padding-top: 9px;
@@ -956,6 +961,7 @@ input:focus + .icon {
   height: 68px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main-footer-logo:hover {
@@ -984,6 +990,7 @@ input:focus + .icon {
   line-height: 24px;
   list-style: none;
   color: #f1f5f7;
+  align-items: center;
 }
 
 .footer-address {
@@ -1013,6 +1020,10 @@ input:focus + .icon {
   line-height: 24px;
   color: #ffd180;
   list-style: none;
+}
+
+.footer-products a {
+  align-items: center;
 }
 
 .most-main-footer .container {
@@ -1045,7 +1056,7 @@ input:focus + .icon {
 .social-button {
   color: #ffffff;
   background-color: #212a3a;
-
+  align-items: center;
 }
 
 .social-button:hover,
@@ -1069,6 +1080,7 @@ input:focus + .icon {
 .feedback a,
 .developed-by a {
   color: #ffd180;
+  align-items: center;
 }
 
 .feedback a:hover,
@@ -1365,6 +1377,10 @@ input:focus + .icon {
   font-weight: normal;
   margin-right: 20px;
   margin-top: 20px;
+}
+
+.catalog {
+  width: 700px;
 }
 
 .sorting {
