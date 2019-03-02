@@ -76,7 +76,7 @@
             <img src="img/man-1.jpg" width="620" height="266" alt="Рабочий с перфоратором">
             <h3 class="title-drills"><span class="visually-hidden">Перфораторы</span></h3>
             <p class="info-drills"><span class="visually-hidden">Настоящие мужские игрушки</span></p><img class="visually-hidden" src="img/man-2.jpg" width="620" height="266" alt="Мужчина с перфоратором">
-            <a class="button-catalog button" href="#">Открыть каталог</a>
+            <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
           </div>
           <div class="sale-delivery">
             <div class="sale main-products">
@@ -226,9 +226,8 @@
         <div class="container">
           <div class="service">
             <h2 class="service-headline">Сервисы</h2>
-            <p class="description">Хороший интернет-магазин отличается от плохого не только ценами!<br>
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-            </p>
+            <p class="description">Хороший интернет-магазин отличается от плохого не только ценами!</p>
+            <p class="description">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
           <div class="service-information-btn">
             <ul class="service-item">
@@ -240,17 +239,16 @@
               <div class="delivery-cargo">
                 <h3 class="services">Доставка</h3>
                 <p class="description">Мы с удовольствием доставим ваш товар прямо<br>
-                  к вашему подъезду совершенно бесплатно!<br>
-                  Ведь мы неплохо заработаем,<br>
-                  поднимая его на ваш этаж!
-                </p>
+                к вашему подъезду совершенно бесплатно!</p>
+                <p class="description">Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!</p>
               </div>
               <div class="guarantee">
                 <h3 class="services">Гарантия</h3>
                 <p class="description">Если купленный у нас товар поломается или заискрит,<br>
-                а также в случае пожара, спровоцированного его возгоранием,<br>
-                вы всегда можете быть уверенны в нашей гарантии. Мы обменяем<br>
-                сгоревший товар на новый.<br>
+                а также в случае пожара, спровоцированного его возгоранием,</p>
+                <p class="description">вы всегда можете быть уверенны в нашей гарантии. Мы обменяем</p>
+                <p class="description">сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.</p>
               </div>
               <div class="credit-service">
@@ -283,8 +281,8 @@
           <p class="about-company">Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <a class="contacts-button-map"><img src="img/map.png" width="300" height="158" alt="Большая конюшенная ул., 19"></a>
-          <a class="button button-contacts" href="map.html">Заблудились? Напишите нам!</a>
+          <a class="contacts-button-map" href="map.html"><img src="img/map.png" width="300" height="158" alt="Большая конюшенная ул., 19"></a>
+          <a class="button button-contacts" href="connection.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -341,22 +339,22 @@
     <section class="modal modal-connection">
       <h2 class="visually-hidden">Заблудились? Напишите нам!</h2>
       <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="field-wrap half-width">
+        <p class="field-wrap half-width field-wrap-name">
           <label for="user-name">Ваше имя:</label>
           <input class="name-icon-user field" id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
-        <p class="field-wrap half-width">
-          <label for="user-email">Ваш e-mail</label>
+        <p class="field-wrap half-width field-wrap-email">
+          <label for="user-email">Ваш e-mail:</label>
           <input class="email-icon-user field" id="user-email" type="email" name="email" placeholder="email@example.com" required>
         </p>
         <p class="field-wrap">
-          <label for="text-letter">Текст письма</label>
+          <label for="text-letter">Текст письма:</label>
           <textarea class="text-icon-user field" id="text-letter" name="text" rows="10" cols="30" placeholder="В свободной форме" required></textarea>
         </p>
+        <div class="button-background">
+          <button class="button button-form" type="submit">Отправить</button>
+        </div>
       </form>
-      <div class="button-background">
-        <button class="button button-form" type="submit">Отправить</button>
-      </div>
       <button class="modal-close-connection" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
