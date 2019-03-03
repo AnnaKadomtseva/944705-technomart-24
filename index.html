@@ -70,13 +70,25 @@
             <h3 class="title-service">Техника</h3>
             <a class="clarification button" href="#">Для стройки</a>
           </div>
-          <div class="drills">
-            <h3 class="title-drills">Дрели</h3>
-            <p class="info-drills">Соседям на радость!</p>
-            <img src="img/man-1.jpg" width="620" height="266" alt="Рабочий с перфоратором">
-            <h3 class="title-drills"><span class="visually-hidden">Перфораторы</span></h3>
-            <p class="info-drills"><span class="visually-hidden">Настоящие мужские игрушки</span></p><img class="visually-hidden" src="img/man-2.jpg" width="620" height="266" alt="Мужчина с перфоратором">
-            <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
+          <div class="slider">
+            <div class="slide slide-active">
+              <h3 class="title-drills">Дрели</h3>
+              <p class="info-drills">Соседям на радость!</p>
+              <img class="first-slider" src="img/man-1.jpg" width="620" height="266" alt="Рабочий с перфоратором">
+              <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
+            </div>
+            <div class="slide">
+              <h3 class="title-drills">Перфораторы</h3>
+              <p class="info-drills">Настоящие мужские игрушки</p>
+              <img class="second-slider" src="img/man-2.jpg" width="620" height="266" alt="Мужчина с перфоратором">
+              <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
+            </div>
+            <button class="slider-btn-prev"><span class="visually-hidden">Предыдущий слайд</span></button>
+            <button class="slider-btn-next"><span class="visually-hidden">Следующий слайд</span></button>
+            <div class="slider-pagination">
+              <button class="slider-marker"><span class="visually-hidden">Первый слайд</span></button>
+              <button class="slider-marker slider-marker-active"><span class="visually-hidden">Второй слайд</span></button>
+            </div>
           </div>
           <div class="sale-delivery">
             <div class="sale main-products">
@@ -226,8 +238,7 @@
         <div class="container">
           <div class="service">
             <h2 class="service-headline">Сервисы</h2>
-            <p class="description">Хороший интернет-магазин отличается от плохого не только ценами!</p>
-            <p class="description">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            <p class="description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
           <div class="service-information-btn">
             <ul class="service-item">
@@ -236,24 +247,21 @@
               <li class="credit"><a href="#">Кредит</a></li>
             </ul>
             <div class="service-information">
-              <div class="delivery-cargo">
+              <div class="delivery-cargo service-information-active">
                 <h3 class="services">Доставка</h3>
-                <p class="description">Мы с удовольствием доставим ваш товар прямо<br>
-                к вашему подъезду совершенно бесплатно!</p>
-                <p class="description">Ведь мы неплохо заработаем,<br>
+                <p class="description description-delivery">Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>
               </div>
               <div class="guarantee">
                 <h3 class="services">Гарантия</h3>
-                <p class="description">Если купленный у нас товар поломается или заискрит,<br>
-                а также в случае пожара, спровоцированного его возгоранием,</p>
-                <p class="description">вы всегда можете быть уверенны в нашей гарантии. Мы обменяем</p>
-                <p class="description">сгоревший товар на новый.<br>
+                <p class="description description-guarantee">Если купленный у нас товар поломается или заискрит,<br>
+                а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверенны в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.</p>
               </div>
               <div class="credit-service">
                 <h3 class="services">Кредит</h3>
-                <p class="description">Залезть в долговую яму стало проще!<br>
+                <p class="description description-credit">Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.</p>
                 <a class="button button-request" href="#">Отправить заявку</a>
               </div>
@@ -266,8 +274,7 @@
           <h2 class="company-info">Компания «Техномарт»</h2>
           <p class="about-company">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастрабайтерах.
           </p>
-          <p class="about-company">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-            Техномарт работает со многими транспортными компаниями:
+          <p class="about-company about-company-transport">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="list">
             <li>Деловые линии</li>
@@ -339,11 +346,11 @@
     <section class="modal modal-connection">
       <h2 class="visually-hidden">Заблудились? Напишите нам!</h2>
       <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="field-wrap half-width field-wrap-name">
+        <p class="field-wrap half-width">
           <label for="user-name">Ваше имя:</label>
           <input class="name-icon-user field" id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
-        <p class="field-wrap half-width field-wrap-email">
+        <p class="field-wrap half-width">
           <label for="user-email">Ваш e-mail:</label>
           <input class="email-icon-user field" id="user-email" type="email" name="email" placeholder="email@example.com" required>
         </p>
