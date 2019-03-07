@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -97,7 +97,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="manufacturer">
               <legend>Производители:</legend>
               <ul class="producer">
                 <li class="filter-option">
@@ -126,7 +126,7 @@
               <legend>Питание:</legend>
               <ul class="producer">
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="group" value="rechargeable" id="filter-rechargeable">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="group" value="rechargeable" id="filter-rechargeable" checked>
                   <label for="filter-rechargeable">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
@@ -143,8 +143,8 @@
             <h2 class="sorting-view">Сортировка:</h2>
             <ul class="sorting-list">
               <li class="sorting-item sorting-item-select"><a href="#">По цене</a></li>
-              <li class="sorting-item"><a href="#">По типу</a></li>
-              <li class="sorting-item"><a href="#">По функционалу</a></li>
+              <li class="sorting-item sorting-item-type"><a href="#">По типу</a></li>
+              <li class="sorting-item sorting-item-functional"><a href="#">По функционалу</a></li>
             </ul>
             <ul class="sorting-list">
               <li class="sorting-item-arrows sorting-item-select"><a class="sorting-item-arrow" href="#"><span class="visually-hidden">По возрастанию</span>
@@ -335,7 +335,7 @@
       <section class="infomation-end">
         <div class="container">
           <h2 class="page-title-end">Пара слов о перфораторах</h2>
-          <p class="text-page-title">Перфоратор-универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+          <p class="text-page-title">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
@@ -348,7 +348,7 @@
             <a class="main-footer-logo" href="index.html">
               <img src="img/logo.svg" width="138" height="23" alt="Техномарт">
             </a>
-            <p class="footer-address">г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
               +7 (812) 555-05-55
             </p>
           </div>
@@ -371,7 +371,7 @@
       </section>
       <section class="buttom-footer">
         <div class="container">
-          <p class="protection">2010-2017 Компания "Техномарт"<br>
+          <p class="protection">© 2010—2017 Компания «Техномарт»<br>
             Все права защищены
           </p>
           <ul class="social-network">
@@ -384,7 +384,7 @@
               <a href="mail@htmlacademy.ru">mail@htmlacademy.ru
               </a>
             </p>
-            <p class="developed-by">Разработано-<br>
+            <p class="developed-by">Разработано —<br>
               <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>

@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -120,7 +120,7 @@
               </h3>
               <p class="catalog-item-price">
                 <span class="old-price">32500 Р.</span>
-                <span class="current-price">25500 Р.</span>
+                <span class="current-price">25500 P.</span>
               </p>
               <div class="purchase-bookmarks">
                 <a class="button-purchase" href="#">Купить</a>
@@ -138,7 +138,7 @@
               </h3>
               <p class="catalog-item-price">
                 <span class="old-price">22500 Р.</span>
-                <span class="current-price">15500 Р.</span>
+                <span class="current-price">15500 P.</span>
               </p>
               <div class="purchase-bookmarks">
                 <a class="button-purchase" href="#">Купить</a>
@@ -156,7 +156,7 @@
               </h3>
               <p class="catalog-item-price">
                 <span class="old-price">30500 Р.</span>
-                <span class="current-price">25500 Р.</span>
+                <span class="current-price">25500 P.</span>
               </p>
               <div class="purchase-bookmarks">
                 <a class="button-purchase" href="#">Купить</a>
@@ -173,7 +173,7 @@
                 <a href="catalog-item.html">Перфоратор BOSCH BFG 2000</a>
               </h3>
               <p class="catalog-item-price">
-                <span class="current-price">12500 Р.</span>
+                <span class="current-price">12500 P.</span>
               </p>
               <div class="purchase-bookmarks">
                 <a class="button-purchase" href="#">Купить</a>
@@ -285,7 +285,7 @@
         </section>
         <section class="contacts-main">
           <h2 class="company-info">Контакты</h2>
-          <p class="about-company">Вы можете забрать товар сами,<br>
+          <p class="about-company about-company-contacts">Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
           <a class="contacts-button-map" href="map.html"><img src="img/map.png" width="300" height="158" alt="Большая конюшенная ул., 19"></a>
@@ -300,7 +300,7 @@
             <a class="main-footer-logo" href="index.html">
               <img src="img/logo.svg" width="138" height="23" alt="Техномарт">
             </a>
-            <p class="footer-address">г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
               +7 (812) 555-05-55
             </p>
           </div>
@@ -314,8 +314,8 @@
             </ul>
             <ul class="footer-products">
               <li><a href="materials.html">Материалы</a></li>
-              <li><a href="equipment.html">Техника</a></li>
-              <li><a href="tool.html">Инструмент</a></li>
+              <li class="technics"><a href="equipment.html">Техника</a></li>
+              <li class="tools"><a href="tool.html">Инструмент</a></li>
               <li><a href="special-offers.html">Спецпредложения</a></li>
             </ul>
           </div>
@@ -323,7 +323,7 @@
       </section>
       <section class="buttom-footer">
         <div class="container">
-          <p class="protection">2010-2017 Компания "Техномарт"<br>
+          <p class="protection">© 2010—2017 Компания «Техномарт»<br>
             Все права защищены
           </p>
           <ul class="social-network">
@@ -335,7 +335,7 @@
             <p class="feedback">Обратная связь:<br>
               <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-            <p class="developed-by">Разработано-<br>
+            <p class="developed-by">Разработано —<br>
               <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
@@ -356,7 +356,7 @@
         </p>
         <p class="field-wrap">
           <label for="text-letter">Текст письма:</label>
-          <textarea class="text-icon-user field" id="text-letter" name="text" rows="10" cols="30" placeholder="В свободной форме" required></textarea>
+          <textarea class="text-icon-user field" id="text-letter" name="text" rows="5" cols="30" placeholder="В свободной форме" required></textarea>
         </p>
         <div class="button-background">
           <button class="button button-form" type="submit">Отправить</button>
