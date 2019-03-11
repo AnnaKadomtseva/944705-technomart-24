@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -285,9 +285,7 @@
         </section>
         <section class="contacts-main">
           <h2 class="company-info">Контакты</h2>
-          <p class="about-company about-company-contacts">Вы можете забрать товар сами,<br>
-            заехав в наш офис:
-          </p>
+          <p class="about-company about-company-contacts">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="contacts-button-map" href="map.html"><img src="img/map.png" width="300" height="158" alt="Большая конюшенная ул., 19"></a>
           <a class="button button-contacts" href="connection.html">Заблудились? Напишите нам!</a>
         </section>
@@ -297,11 +295,10 @@
       <section class="most-main-footer">
         <div class="container">
           <div class="logo-address">
-            <a class="main-footer-logo" href="index.html">
+            <a class="main-footer-logo">
               <img src="img/logo.svg" width="138" height="23" alt="Техномарт">
             </a>
-            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-              +7 (812) 555-05-55
+            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
             </p>
           </div>
           <div class="footer-items-product">
@@ -323,8 +320,7 @@
       </section>
       <section class="buttom-footer">
         <div class="container">
-          <p class="protection">© 2010—2017 Компания «Техномарт»<br>
-            Все права защищены
+          <p class="protection">© 2010—2017 Компания «Техномарт» Все права защищены
           </p>
           <ul class="social-network">
             <li><a class="social-button vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
@@ -332,10 +328,10 @@
             <li><a class="social-button insta" href="#"><span class="visually-hidden">Инстраграмм</span></a></li>
           </ul>
           <div class="footer-copyright">
-            <p class="feedback">Обратная связь:<br>
+            <p class="feedback">Обратная связь:
               <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-            <p class="developed-by">Разработано —<br>
+            <p class="developed-by">Разработано —
               <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
@@ -348,15 +344,15 @@
       <form class="connection-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="field-wrap half-width">
           <label for="user-name">Ваше имя:</label>
-          <input class="name-icon-user field" id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
+          <input class="name-icon-user field" id="user-name" type="text" name="login" placeholder="Имя Фамилия">
         </p>
         <p class="field-wrap half-width">
           <label for="user-email">Ваш e-mail:</label>
-          <input class="email-icon-user field" id="user-email" type="email" name="email" placeholder="email@example.com" required>
+          <input class="email-icon-user field" id="user-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p class="field-wrap">
           <label for="text-letter">Текст письма:</label>
-          <textarea class="text-icon-user field" id="text-letter" name="text" rows="5" cols="30" placeholder="В свободной форме" required></textarea>
+          <textarea class="text-icon-user field" id="text-letter" name="text" rows="5" cols="30" placeholder="В свободной форме"></textarea>
         </p>
         <div class="button-background">
           <button class="button button-form" type="submit">Отправить</button>
@@ -367,10 +363,12 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Где мы находимся</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5879296513956!2d30.32175292256195!3d59.93897959610683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1552138628530" width="940" height="446" allowfullscreen></iframe>
       <p>
-        <img src="img/map-1.png" width="1736" height="779" alt="Офис расположен по адресу ул. Большая Конюшенная д. 19/8 г. Санкт-Петербург">
+        <img src="img/map-1.png" width="940" height="446" alt="Офис расположен по адресу ул. Большая Конюшенная д. 19/8 г. Санкт-Петербург">
       </p>
       <button class="modal-close-map" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
